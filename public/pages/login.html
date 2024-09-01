@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home Page</title>
-		<link rel="stylesheet" href="../../style.css" />
-	</head>
-	<nav>
-		<ul class="navbar">
-			<li><a href="../../index.html">Home</a></li>
-			<div class="navbar-links">
-				<li><a href="login.html">Login</a></li>
-				<li><a href="register.html">Register</a></li>
-			</div>
-		</ul>
-	</nav>
-	<body>
-		<div class="login-container">
-			<h1>Login</h1>
-			<form
-				action="http://localhost:3000/login"
-				method="post"
-				class="login-form"
-			>
-				<div class="form-label-input-container">
-					<label for="username">username:</label>
-					<input type="text" id="username" name="username" />
-				</div>
-				<div class="form-label-input-container">
-					<label for="password">password:</label>
-					<input type="password" id="password" name="password" />
-				</div>
-				<button id="submit-button" type="submit">Send</button>
-			</form>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home Page</title>
+	<link rel="stylesheet" href="../../style.css" />
+</head>
+<nav>
+	<ul class="navbar">
+		<li><a href="../../index.html">Home</a></li>
+		<div class="navbar-links">
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
 		</div>
-		<script src="../../src/scripts/login.js"></script>
-	</body>
+	</ul>
+</nav>
+
+<body>
+	<div class="form-container">
+		<h1>Login</h1>
+		<form action="http://localhost:3000/login" method="post" class="auth-form">
+			<div class="form-label-input-container">
+				<label for="username">username:</label>
+				<input type="text" id="username" name="username" />
+			</div>
+			<div class="form-label-input-container">
+				<label for="password">password:</label>
+				<input type="password" id="password" name="password" />
+			</div>
+			<button id="submit-button" type="submit">Send</button>
+		</form>
+	</div>
+	<script src="../../src/scripts/login.js"></script>
+</body>
+
 </html>

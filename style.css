@@ -1,9 +1,11 @@
 html {
 	font-size: 16px;
 }
+
 body {
 	margin: 0;
 }
+
 h1 {
 	margin-top: 0;
 }
@@ -24,7 +26,7 @@ ul {
 	gap: 1em;
 }
 
-.login-container {
+.form-container {
 	width: 25%;
 	margin: 0 auto;
 	border: 1px solid red;
@@ -39,7 +41,7 @@ ul {
 	margin-bottom: 0.5em;
 }
 
-.login-form {
+.auth-form {
 	width: 50%;
 }
 
@@ -51,6 +53,7 @@ ul {
 	border: black 2px solid;
 	font-size: 1em;
 }
+
 #submit-button:active {
 	width: 105%;
 	background-color: green;
